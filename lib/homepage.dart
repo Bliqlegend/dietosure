@@ -26,6 +26,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        resizeToAvoidBottomInset: true,
         backgroundColor: color1,
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -148,7 +149,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 10,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -179,7 +180,7 @@ class _HomePageState extends State<HomePage> {
                   Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(5.0),
+                        padding: const EdgeInsets.all(4.0),
                         child: Card(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.0)),
@@ -189,7 +190,6 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Padding(
                                 padding:
-                                    const EdgeInsets.fromLTRB(10, 10, 10, 10),
                                     const EdgeInsets.fromLTRB(10, 10, 10, 10),
                                 child: Container(
                                   height: 50,
@@ -236,7 +236,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(5.0),
+                        padding: const EdgeInsets.all(4.0),
                         child: Card(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.0)),
@@ -292,7 +292,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(5.0),
+                        padding: const EdgeInsets.all(4.0),
                         child: Card(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.0)),
@@ -355,7 +355,7 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     color: color1,
                     child: Padding(
-                      padding: const EdgeInsets.fromLTRB(8, 5, 8, 8),
+                      padding: const EdgeInsets.fromLTRB(8, 5, 8, 10),
                       child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
